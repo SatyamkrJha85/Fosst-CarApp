@@ -1,5 +1,7 @@
 package com.theapplicationpad.fosst_carapp.Mvvm.View.Screens
 
+import android.Manifest
+import android.os.Build
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
@@ -23,6 +25,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -40,17 +43,44 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.google.accompanist.permissions.ExperimentalPermissionsApi
+import com.google.accompanist.permissions.isGranted
+import com.google.accompanist.permissions.rememberPermissionState
+import com.google.firebase.Firebase
+import com.google.firebase.messaging.messaging
 import com.theapplicationpad.fosst_carapp.Mvvm.VIewModel.CarViewModel
 import com.theapplicationpad.fosst_carapp.Mvvm.VIewModel.UserViewModel
 import com.theapplicationpad.fosst_carapp.Mvvm.View.Navigation.Route.Route
+import com.theapplicationpad.fosst_carapp.Mvvm.View.Screens.Component.FirebaseMessagingNotificationPermissionDialog
 import com.theapplicationpad.fosst_carapp.R
 
 
+@OptIn(ExperimentalPermissionsApi::class)
 @Composable
 fun BottomScreen(navController1: NavHostController,userViewModel: UserViewModel,carViewModel: CarViewModel,modifier: Modifier = Modifier) {
 
 
     val navController = rememberNavController()
+
+    val showNotificationDialog = remember { mutableStateOf(false) }
+
+    // Android 13 Api 33 - runtime notification permission has been added
+    val notificationPermissionState = rememberPermissionState(
+        permission = Manifest.permission.POST_NOTIFICATIONS
+    )
+    if (showNotificationDialog.value) FirebaseMessagingNotificationPermissionDialog(
+        showNotificationDialog = showNotificationDialog,
+        notificationPermissionState = notificationPermissionState
+    )
+
+    LaunchedEffect(key1=Unit){
+        if (notificationPermissionState.status.isGranted ||
+            Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU
+        ) {
+            Firebase.messaging.subscribeToTopic("Tutorial")
+        } else showNotificationDialog.value = true
+    }
+
 
     Scaffold(
         containerColor = Color.Transparent,

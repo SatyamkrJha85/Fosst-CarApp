@@ -26,6 +26,14 @@
             </intent-filter>
         </activity>
 
+        <service
+            android:name=".Mvvm.Fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
         <receiver android:name="com.razorpay.RzpTokenReceiver"
             android:exported="true">
             <intent-filter>

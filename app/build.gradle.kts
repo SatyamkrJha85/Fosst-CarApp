@@ -64,6 +64,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.firebase.firestore)
     implementation(libs.androidx.compose.material)
+    implementation(libs.firebase.messaging)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -130,5 +131,8 @@ dependencies {
 
     // Google Play services for Maps
     implementation("com.google.android.gms:play-services-maps:18.0.2")
+
+    // notification permission
+    implementation("com.google.accompanist:accompanist-permissions:0.31.1-alpha")
 
 }

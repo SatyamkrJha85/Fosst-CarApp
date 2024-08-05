@@ -33,6 +33,7 @@ import androidx.compose.material3.TextField
 import androidx.compose.material3.TextFieldColors
 import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -59,8 +60,10 @@ import com.theapplicationpad.fosst_carapp.Mvvm.Model.GeneralModal.Brandlist
 import com.theapplicationpad.fosst_carapp.Mvvm.VIewModel.CarViewModel
 import com.theapplicationpad.fosst_carapp.Mvvm.VIewModel.UserViewModel
 import com.theapplicationpad.fosst_carapp.Mvvm.View.Navigation.Route.Route
+import com.theapplicationpad.fosst_carapp.Mvvm.View.Screens.Component.ShimmerEffect
 import com.theapplicationpad.fosst_carapp.R
 import com.theapplicationpad.fosst_carapp.ui.theme.BackGroundColor
+import kotlinx.coroutines.delay
 
 @Composable
 fun HomeScreen(
@@ -77,7 +80,12 @@ fun HomeScreen(
 
     var searchQuery by remember { mutableStateOf("") }
     val filteredCars = cars.filter { it.name.contains(searchQuery, ignoreCase = true) }
+    var showShimmer by remember { mutableStateOf(true) }
 
+    LaunchedEffect(Unit) {
+        delay(600)
+        showShimmer = false
+    }
 
     LazyColumn(
         modifier = Modifier
@@ -113,7 +121,7 @@ fun HomeScreen(
                     .heightIn(max = 500.dp) // Ensure bounded height for the grid
             ) {
 
-                if (cars.isNotEmpty()){
+                if (cars.isNotEmpty()  && !showShimmer){
                     LazyVerticalGrid(
                         columns = GridCells.Fixed(2),
                         modifier = Modifier
@@ -145,12 +153,22 @@ fun HomeScreen(
                     }
                 }
                 else{
-                    Column(modifier = Modifier.fillMaxSize(),
-                        verticalArrangement = Arrangement.Center,
-                        horizontalAlignment = Alignment.CenterHorizontally
-                    ) {
-                        Text(text = "Empty Product")
+//                    Column(modifier = Modifier.fillMaxSize(),
+//                        verticalArrangement = Arrangement.Center,
+//                        horizontalAlignment = Alignment.CenterHorizontally
+//                    ) {
+//                        Text(text = "Empty Product")
+//
+//                    }
 
+                    LazyVerticalGrid(
+                        columns = GridCells.Fixed(2),
+                        modifier = Modifier
+                            .background(Color.White)
+                    ) {
+                        items(10) {
+                            ShimmerEffect()
+                        }
                     }
                 }
 
