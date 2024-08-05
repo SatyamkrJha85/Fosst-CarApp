@@ -23,27 +23,43 @@ Fosst-CarApp is an advanced car buying application developed using Jetpack Compo
 
 
 ## Screenshots
-![Creditcard2](https://github.com/user-attachments/assets/5c2c2f50-d12d-4521-a6f1-8e27fe08515f)
-![Creditcard3](https://github.com/user-attachments/assets/2fac0998-d353-42da-9b73-8bfa57b1bfc1)
-![Addphoneno](https://github.com/user-attachments/assets/7619b374-a19f-4fca-806b-cd0e9025ab8c)
-![IMG-20240805-WA0018](https://github.com/user-attachments/assets/60c349a9-ea8c-4d02-bfa0-92a07e50b260)
-![Razorpay](https://github.com/user-attachments/assets/9316ae99-b182-4d92-9cc0-f9c15e1f4bd3)
-![searchcar](https://github.com/user-attachments/assets/49f8a872-c23c-4d44-b4ad-b40fc3025bd3)
-![Specialcar](https://github.com/user-attachments/assets/ffa7dee6-3084-4bd7-9399-7363c4eb1639)
-![GoogleMap](https://github.com/user-attachments/assets/3e2e6e43-bb47-4149-bc4d-bca38e03a9b3)
-![Notification](https://github.com/user-attachments/assets/a930b9e7-0253-4cb5-8614-a5b8a7aaac34)
-![Vr1](https://github.com/user-attachments/assets/946ddd2b-6be8-4ff9-8cc0-f06972b4210a)
-![Ar2](https://github.com/user-attachments/assets/9a30539f-2f18-40a7-ab38-dcedcff13f04)
-![Onbording](https://github.com/user-attachments/assets/69a5d83d-da39-48b7-9f6c-fb736ae56c7e)
-![Splash](https://github.com/user-attachments/assets/d87555ac-664d-4ac7-a45d-71594529c0b4)
-![Login](https://github.com/user-attachments/assets/5abb6b55-c8c1-4e6c-bd69-0ce35b01fa37)
-![Register](https://github.com/user-attachments/assets/4678e1cf-7031-4250-b619-af23d7b8f723)
-![HomePage](https://github.com/user-attachments/assets/a19b802b-b9b4-4a52-af22-1c012138a8d2)
-![EmptyLike](https://github.com/user-attachments/assets/f6a92183-0e8e-4fb2-b469-2f2d5037bf9e)
-![Profile](https://github.com/user-attachments/assets/754b33dc-b35c-49f4-8b45-e2ff6eb1a678)
-![EmptyCart](https://github.com/user-attachments/assets/4e35a6ac-1d32-4532-be87-619a0badb900)
-![Cart](https://github.com/user-attachments/assets/b1a9f746-8d86-4083-86e4-eea7c816769d)
-![Creditcard](https://github.com/user-attachments/assets/e9690426-9ac8-4a92-9b53-136354d5a9a6)
+
+
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/e9690426-9ac8-4a92-9b53-136354d5a9a6" width="200" height="450" alt="Credit Card"><br>Credit Card</td>
+    <td><img src="https://github.com/user-attachments/assets/5c2c2f50-d12d-4521-a6f1-8e27fe08515f" width="200" height="450" alt="Credit Card 2"><br>Credit Card 2</td>
+    <td><img src="https://github.com/user-attachments/assets/2fac0998-d353-42da-9b73-8bfa57b1bfc1" width="200" height="450" alt="Credit Card 3"><br>Credit Card 3</td>
+    <td><img src="https://github.com/user-attachments/assets/7619b374-a19f-4fca-806b-cd0e9025ab8c" width="200" height="450" alt="Add Phone Number"><br>Add Phone Number</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/60c349a9-ea8c-4d02-bfa0-92a07e50b260" width="200" height="450" alt="IMG-20240805-WA0018"><br>IMG-20240805-WA0018</td>
+    <td><img src="https://github.com/user-attachments/assets/9316ae99-b182-4d92-9cc0-f9c15e1f4bd3" width="200" height="450" alt="Razorpay"><br>Razorpay</td>
+    <td><img src="https://github.com/user-attachments/assets/49f8a872-c23c-4d44-b4ad-b40fc3025bd3" width="200" height="450" alt="Search Car"><br>Search Car</td>
+    <td><img src="https://github.com/user-attachments/assets/ffa7dee6-3084-4bd7-9399-7363c4eb1639" width="200" height="450" alt="Special Car"><br>Special Car</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/3e2e6e43-bb47-4149-bc4d-bca38e03a9b3" width="200" height="450" alt="Google Map"><br>Google Map</td>
+    <td><img src="https://github.com/user-attachments/assets/a930b9e7-0253-4cb5-8614-a5b8a7aaac34" width="200" height="450" alt="Notification"><br>Notification</td>
+    <td><img src="https://github.com/user-attachments/assets/946ddd2b-6be8-4ff9-8cc0-f06972b4210a" width="200" height="450" alt="VR 1"><br>VR 1</td>
+    <td><img src="https://github.com/user-attachments/assets/9a30539f-2f18-40a7-ab38-dcedcff13f04" width="200" height="450" alt="AR 2"><br>AR 2</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/69a5d83d-da39-48b7-9f6c-fb736ae56c7e" width="200" height="450" alt="Onboarding"><br>Onboarding</td>
+    <td><img src="https://github.com/user-attachments/assets/d87555ac-664d-4ac7-a45d-71594529c0b4" width="200" height="450" alt="Splash"><br>Splash</td>
+    <td><img src="https://github.com/user-attachments/assets/5abb6b55-c8c1-4e6c-bd69-0ce35b01fa37" width="200" height="450" alt="Login"><br>Login</td>
+    <td><img src="https://github.com/user-attachments/assets/4678e1cf-7031-4250-b619-af23d7b8f723" width="200" height="450" alt="Register"><br>Register</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/a19b802b-b9b4-4a52-af22-1c012138a8d2" width="200" height="450" alt="Home Page"><br>Home Page</td>
+    <td><img src="https://github.com/user-attachments/assets/f6a92183-0e8e-4fb2-b469-2f2d5037bf9e" width="200" height="450" alt="Empty Like"><br>Empty Like</td>
+    <td><img src="https://github.com/user-attachments/assets/754b33dc-b35c-49f4-8b45-e2ff6eb1a678" width="200" height="450" alt="Profile"><br>Profile</td>
+    <td><img src="https://github.com/user-attachments/assets/4e35a6ac-1d32-4532-be87-619a0badb900" width="200" height="450" alt="Empty Cart"><br>Empty Cart</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/b1a9f746-8d86-4083-86e4-eea7c816769d" width="200" height="450" alt="Cart"><br>Cart</td>
+  </tr>
+</table>
 
 
 
