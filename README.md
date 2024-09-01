@@ -14,7 +14,7 @@ Fosst-CarApp is an advanced car buying application developed using Jetpack Compo
 - **Search**: Search for specific cars using the search functionality.
 - **Like and Cart**: Like cars to save them for later or add them to the cart.
 - **Purchase Car**: Purchase your favorite car.
-- **Purchase History**: Track purchased cars and view purchase history.
+- **Purchase History**: Track purchased cars and view purchase history..
 - **Profile Management**: Manage user profiles, including viewing names, emails, and profile pictures.
 - **Shimmer Effect**: Enjoy a smooth loading animation on the app's first launch.
 - **Ar Mode**: View your favorite car in Ar Mode.
